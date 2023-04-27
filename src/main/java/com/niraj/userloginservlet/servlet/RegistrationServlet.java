@@ -32,7 +32,7 @@ public class RegistrationServlet extends HttpServlet{
             res.setContentType("text/html");
             PrintWriter out = res.getWriter();
             out.print("<font color='RED'><center>New User with userName <b>'"+addedUser.getUserName()+"'</b> added Successfully! Now please login.</center></font>");
-            RequestDispatcher rd = req.getRequestDispatcher("/register.html");
+            RequestDispatcher rd = req.getRequestDispatcher("/login.html");
             rd.include(req, res);
         }else{
             res.setContentType("text/html");
